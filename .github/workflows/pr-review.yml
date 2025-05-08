@@ -41,14 +41,15 @@ jobs:
             1. Clone the repository ${{ github.repository }} locally.
             2. Next, set up a pre-push Git hook that prevents any pushes from a user with the username "Devin AI" OR an email containing "devin-ai-integration" as a substring. Activate the hook.
             3. View the diffs of the changed files for PR #${{ github.event.pull_request.number }} in repository ${{ github.repository }}.
-            4. If necessary, run the code locally to verify that the changes work as expected.
-            5. Read the PR discussion to see what previous comments and suggestions have been made.
+            4. Please run the code locally to verify that the changes work as expected.
+            5. Read the PR discussion to see what previous comments, code changes and suggestions have been made.
             6. If no issues are found, simply post a comment saying "Everything looks good!" and stop here. Your work is done.
             7. Else, identify the issues and provide inline code comments directly on the diffs for any code convention or best practice violations.
-            8. Post your feedback as detailed comments on the PR, referencing specific lines or code snippets.
+            8. Use emojis to show severity - red circle emoji for important fix, orange circle emoji for semi-important fix, and green circle emoji for optional fix.
+            9. Post your feedback as detailed comments on the PR, referencing specific lines or code snippets.
             Rules and Guidelines:
             1. NEVER make any commits or pushes to the repository - you are ONLY allowed to review code and leave comments
-            2. Do not make more than three total comments on the PR.
+            2. Make sure to review the whole code base and make as much comments where needed on the PR.
             3. Use inline feedback where possible with specific line references
             4. Include code snippets in markdown format when discussing issues
             5. Default towards multi-line comments that show context around the issue
